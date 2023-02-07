@@ -28,10 +28,8 @@ def amountProcessing(amount,userAmount,vehicleType):
 
 def VehicleType(motorTpyes):
      print('your tollfree will be:', list(motorTpyes.values())[0])
-     userAmount = int(input('Enter the amount:'))
-     amount = list(motorTpyes.values())[0]
-     vehicleType = list(motorTpyes.keys())[0]
-     amountProcessing(amount, userAmount, vehicleType)
+     userAmount = int(input('Enter the amount:')) 
+     amountProcessing(list(motorTpyes.values())[0], userAmount, list(motorTpyes.keys())[0])
 
 def tollGate():
     print('Choose the vehicle type')
